@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
-	fmt.Println(math.Abs(-34))
+	a := [2]int{1, 2}
+	fmt.Println(a)
 }
