@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golangtutorial/src/go_dev/day1/gorouteexp1/gorout"
+	"gotutor/day1/gorouteexp1/gorout"
 )
 
 func main() {

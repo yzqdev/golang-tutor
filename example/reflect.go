@@ -13,7 +13,7 @@ type Bird struct {
 func (b *Bird) Fly() {
 	fmt.Println("I am flying...")
 }
-func main() {
+func Reflect() {
 	sparrow := &Bird{"Sparrow", 3}
 	s := reflect.ValueOf(sparrow).Elem()
 	typeOfT := s.Type()

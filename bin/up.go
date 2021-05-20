@@ -5,7 +5,7 @@ import (
 	"os/exec"
 )
 
-func main() {
+func Execute() {
 	cmd := exec.Command("kate")
 	err := cmd.Run()
 	if err != nil {
