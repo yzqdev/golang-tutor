@@ -8,3 +8,7 @@ func List(n int) {
 		fmt.Printf("%d+%d=%d\n", i, n-i, n)
 	}
 }
+
+func main() {
+	List(10)
+}

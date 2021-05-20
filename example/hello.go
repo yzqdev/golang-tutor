@@ -26,3 +26,7 @@ func Hello() {
 		fmt.Println(i, c)
 	}
 }
+
+func main() {
+	Hello()
+}
