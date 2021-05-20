@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func ArrayFun() {
+func ArrayFun(num int) {
 
 	// 这里我们创建了一个数组 `a` 来存放刚好 5 个 `int`。
 	// 元素的类型和长度都是数组类型的一部分。
@@ -30,5 +30,6 @@ func ArrayFun() {
 			twoD[i][j] = i + j
 		}
 	}
+	fmt.Println(num)
 	fmt.Println("2d: ", twoD)
 }
