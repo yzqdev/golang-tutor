@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func ArrayAlpha() {
 	// 声明一个长度为5的整数数组
 	// 一旦数组被声明了，那么它的数据类型跟长度都不能再被改变。
 	var array1 [5]int

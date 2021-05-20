@@ -7,7 +7,7 @@ import (
 
 var urls = []string{
 	"https://www.baidu.com/",
-	"https://golang.org/",
+	"http://www.topgoer.com/",
 	"https://blog.golang.org/",
 }
 
