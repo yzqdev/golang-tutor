@@ -19,3 +19,6 @@ func GetSystem() {
 	}
 
 }
+func main() {
+	GetSystem()
+}

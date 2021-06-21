@@ -14,12 +14,12 @@ func Index(vs []string, t string) int {
 	return -1
 }
 
-// 如果目标字符串 `t` 在这个切片中则返回 `true`。
+// Include 如果目标字符串 `t` 在这个切片中则返回 `true`。
 func Include(vs []string, t string) bool {
 	return Index(vs, t) >= 0
 }
 
-// 如果这些切片中的字符串有一个满足条件 `f` 则返回 `true`。
+// Any 如果这些切片中的字符串有一个满足条件 `f` 则返回 `true`。
 func Any(vs []string, f func(string) bool) bool {
 	for _, v := range vs {
 		if f(v) {

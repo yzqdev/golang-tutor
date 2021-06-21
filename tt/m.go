@@ -19,9 +19,16 @@ func worker(done chan bool) {
 }
 
 func main() {
+	var a = new(int)
+	*a = 100
+	fmt.Println(*a)
 
+	var b = make(map[string]int)
+	b["测试"] = 100
+	fmt.Println(b)
 	// 运行一个 worker Go协程，并给予用于通知的通道。
-	for _, e := range os.Environ() {
+	for key, e := range os.Environ() {
+		fmt.Println(key)
 		pair := strings.Split(e, "=")
 		fmt.Println(pair[0])
 	}
