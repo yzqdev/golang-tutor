@@ -12,7 +12,10 @@ func hello(w http.ResponseWriter, req *http.Request) {
 
 	// handler 函数有两个参数，`http.ResponseWriter` 和 `http.Request`。
 	// response writer 被用于写入 HTTP 响应数据，这里我们简单的返回 "hello\n"。
-	fmt.Fprintf(w, "hello\n")
+	_, err := fmt.Fprintf(w, "hello\n")
+	if err != nil {
+		return
+	}
 }
 
 func headers(w http.ResponseWriter, req *http.Request) {
