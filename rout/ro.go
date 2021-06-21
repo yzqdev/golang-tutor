@@ -2,21 +2,20 @@ package main
 
 import (
 	"fmt"
-	"time"
+	"sync"
 )
 
-func say(s string) {
-	for i := 0; i < 5; i++ {
-		time.Sleep(100 * time.Millisecond)
-		fmt.Println(s)
-	}
+var wg sync.WaitGroup
+
+func hello(i int) {
+	defer wg.Done() // goroutine结束就登记-1
+	fmt.Println("Hello Goroutine!", i)
 }
-
 func main() {
-	c := make(chan int, 2)
-	c <- 1
 
-	c <- 2
-	fmt.Println(<-c)
-	fmt.Println(<-c)
+	for i := 0; i < 10; i++ {
+		wg.Add(1) // 启动一个goroutine就登记+1
+		go hello(i)
+	}
+	wg.Wait() // 等待所有登记的goroutine都结束
 }

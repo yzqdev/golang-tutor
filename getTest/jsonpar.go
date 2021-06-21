@@ -4,7 +4,7 @@ import "encoding/json"
 import "fmt"
 import "os"
 
-// 下面我们将使用这两个结构体来演示自定义类型的编码和解码。
+// Response1 下面我们将使用这两个结构体来演示自定义类型的编码和解码。
 type Response1 struct {
 	Page   int
 	Fruits []string
@@ -95,5 +95,8 @@ func main() {
 	// 流中，或者作为 HTTP 响应体。
 	enc := json.NewEncoder(os.Stdout)
 	d := map[string]int{"apple": 5, "lettuce": 7}
-	enc.Encode(d)
+	err := enc.Encode(d)
+	if err != nil {
+		return
+	}
 }

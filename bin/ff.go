@@ -14,6 +14,7 @@ func main() {
 		fmt.Println("open file failed!, err:", err)
 		return
 	}
+	fmt.Println(file.Chdir())
 	// 关闭文件
 	defer file.Close()
 }
