@@ -21,3 +21,6 @@ func main() {
 	wg.Wait()
 	fmt.Println(x)
 }
+func getDate() {
+
+}

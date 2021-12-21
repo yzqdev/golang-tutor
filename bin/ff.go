@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func main() {
+func main1() {
 	path, _ := os.Executable()
 
 	fmt.Println(path)
