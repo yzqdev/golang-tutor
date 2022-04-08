@@ -1,0 +1,1 @@
+go build  -o ./tmp/main.exe .&&tmp\\main.exe -f .\data\packages.json
