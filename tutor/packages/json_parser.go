@@ -19,7 +19,7 @@ package main
 //			"arraywithsubs": [{"subkeyone": 1},
 //			{"subkeytwo": 2, "subkeythree": 3}],
 //			"int": 10,
-//			"float": 5.150,
+//			"basic": 5.150,
 //			"string": "simplejson",
 //			"bool": true,
 //			"sub_obj": {"a": 1}
@@ -43,7 +43,7 @@ package main
 //			"arraywithsubs": [{"subkeyone": 1},
 //			{"subkeytwo": 2, "subkeythree": 3}],
 //			"int": 10,
-//			"float": 5.150,
+//			"basic": 5.150,
 //			"string": "simplejson",
 //			"bool": true,
 //			"sub_obj": {"a": 1}
@@ -72,7 +72,7 @@ package main
 //	i, _ := js.Get("test").Get("int").Int()
 //	assert.Equal(t, 10, i)
 //
-//	f, _ := js.Get("test").Get("float").Float64()
+//	f, _ := js.Get("test").Get("basic").Float64()
 //	assert.Equal(t, 5.150, f)
 //
 //	s, _ := js.Get("test").Get("string").String()
