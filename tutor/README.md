@@ -1,6 +1,7 @@
 # tutor
 
- 
+## 多模块工作区
+[实例](https://gocn.vip/topics/qQP9Gvcyw3#%E5%A4%9A%E6%A8%A1%E5%9D%97%E5%B7%A5%E4%BD%9C%E5%8C%BA)
 
 ## 单元测试规则
 
